@@ -1,0 +1,40 @@
+.tooltip {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  top: -2px;
+  left: 2px;
+}
+
+.tooltip .tooltiptext {
+  display: flex;
+  flex-flow: column;
+  gap: 12px;
+
+  visibility: hidden;
+  width: 258px;
+  background-color: var(--white);
+  color: var(--dark-gray);
+  text-align: center;
+  padding: 24px 16px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  margin-left: -140px;
+  opacity: 0;
+  transition: visibility 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .tooltiptext a {
+  color: var(--green);
+  text-decoration: none;
+  font-weight: 700;
+}

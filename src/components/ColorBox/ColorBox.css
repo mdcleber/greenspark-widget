@@ -1,0 +1,19 @@
+.color-box-select {
+  display: flex;
+  gap: 4px;
+}
+.color-box {
+  width: 16px;
+  height: 16px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3x ease;
+}
+
+.color-box:hover {
+  opacity: 80%;
+}
+
+.color-box-active {
+ border: 2px solid var(--gray);
+}

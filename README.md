@@ -1,6 +1,43 @@
-# Getting Started with Create React App
+# Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is based on a task provided by Greenspark.
+Requirements can be found [here](/docs/Greenspark%20-%20Frontend%20Task-1.pdf) and prototype [here](#prototypes)
+
+This project was developed using React, Typescript and CSS.
+
+## Possible improvements
+- Internationalization: Currently is not supported and is available only the default language.
+- Accessibility: I belive some readers will fail to indentify some custom components, more tests should be done to guaranty that the site is accesible.
+- Unit Test: There is some unit tests, but more could be added to ensure the quality.
+
+# Getting Started
+
+Clone the repo within your local machine and then type the following.
+
+```
+npm install
+```
+
+```
+npm start
+```
+
+This will launch the application locally at https://localhost:3000
+
+# Example Application
+A live version of this project can be found [here](https://incredible-cucurucho-be47d7.netlify.app/)
+
+# Prototypes
+## Desktop
+![image info](/docs/desktop.svg)
+## Mobile
+![image info](/docs/mobile.svg)
+## Checkbox
+![image info](/docs/checkbox.svg)
+## Colors
+![image info](/docs/colors-box.svg)
+## Toggle
+![image info](/docs/toggle.svg)
 
 ## Available Scripts
 
@@ -29,18 +66,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `npm run lint`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Launches ESLint to identifying and reporting on patterns found in ECMAScript/JavaScript/Typescript code, with the goal of making code more consistent and avoiding bugs.

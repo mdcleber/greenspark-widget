@@ -1,0 +1,51 @@
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.toggle-slider {
+  position: relative;
+  width: 40.11px;
+  height: 20.05px;
+  border-radius: 34.18px;
+  transition: 100ms all;
+  border: 0.68px solid var(--lime-green);
+  box-shadow: 0px 1.0254120826721191px 6.836080551147461px 0px #00000026 inset;
+}
+
+.toggle-slider::before {
+  width: 20.05px;
+  height: 21.05px;
+  border-radius: 29.49px;
+  transition: 100ms all;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -1px;
+  background-color: var(--light-gray);
+  transform: translate(0, -50%);
+  border: 0.59px solid var(--beige);
+}
+
+.toggle-input {
+  opacity: 0;
+  position: absolute;
+}
+
+.toggle-input:checked+.toggle-slider {
+  background: rgba(59, 117, 95, 1);
+  border: 0.68px solid rgba(176, 176, 176, 1);
+  box-shadow: 0px 1.0254120826721191px 6.836080551147461px 0px rgba(0, 0, 0, 0.15) inset;
+}
+
+.toggle-input:hover + .toggle-slider:before {
+  box-shadow: 0 0 0 0.25rem rgba(175, 198, 189, 0.5);
+}
+
+
+.toggle-input:checked +.toggle-slider::before {
+  border-color: var(--green);
+  transform: translate(21px, -50%);
+}
